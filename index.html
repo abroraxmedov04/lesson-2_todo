@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <title>Lesson-2</title>
+  </head>
+
+  <body>
+    <!-- todo list  -->
+    <div class="todo-wrapper">
+      <h1 class="title">To-Do list</h1>
+      <form class="todo-form js-form" id="form">
+        <input
+          type="text"
+          placeholder="Enter a task here..."
+          class="form-control js-input"
+        />
+        <button class="create-todo btn btn-primary">new task</button>
+      </form>
+
+      <ul class="task-list">
+        <!-- <li class="task-item active">
+          <span>task 1</span>
+          <button class="btn btn-danger js-btn">delete</button>
+        </li>
+        <li class="task-item">
+          <span>task 1</span>
+          <button class="btn btn-danger js-btn">delete</button>
+        </li>
+        <li class="task-item">
+          <span>task 1</span>
+          <button class="btn btn-danger js-btn">delete</button>
+        </li> -->
+      </ul>
+    </div>
+    <template class="js-template">
+      <li class="task-item">
+        <div>
+          <strong class="task-id" style="margin-right: 10px"></strong>
+          <span class="task-name"></span>
+        </div>
+        <button class="btn btn-danger task-delete js-btn"></button>
+      </li>
+    </template>
+
+    <!-- ! contact list -->
+
+    <div class="contact-wrapper">
+      <div class="main-page-form"></div>
+      <ul class="contact-list"></ul>
+    </div>
+
+    <script src="./to_do.js"></script>
+    <script src="./contact.js"></script>
+
+    <script>
+      const mydiv = document.querySelector(".data-div");
+      console.log(mydiv);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+*, 
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, li{
+    list-style: none;
+}
+
+/* font */
+@font-face {
+    font-family: "Poppins", sans-serif;
+    src:url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.todo-wrapper{
+    /* display: block; */
+    width: 500px;
+    margin: 200px;
+    padding: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.todo-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* .active{
+    text-decoration: line-through;
+} */
+
+.task-list{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.task-item{
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(244, 247, 250);
+    display: flex;
+    justify-content: space-between;
+    
+}
+    
+   
